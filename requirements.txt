@@ -1,3 +1,4 @@
 streamlit
 pandas
 pymongo
+google-api-python-client
