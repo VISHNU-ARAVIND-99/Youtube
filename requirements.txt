@@ -1,0 +1,6 @@
+streamlit
+pandas
+pymongo
+sqlite3
+googleapiclient
+urllib
