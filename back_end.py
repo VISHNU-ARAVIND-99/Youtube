@@ -6,7 +6,7 @@ import sqlite3
 
 
 def api_connection():
-    youtube_api_key = "AIzaSyDJp0o12snMlTSRq9cimQusOfGe6l1mq18"
+    youtube_api_key = "Enter your Key"
     api_service_name = "youtube"
     api_version = "v3"
     return googleapiclient.discovery.build(api_service_name, api_version, developerKey=youtube_api_key)
@@ -112,8 +112,8 @@ def comment_from_video_id(ids_video, youtube_object):
 
 def mangodb_upload(collection_name, data):
     for i in data:
-        username = urllib.parse.quote_plus("vishnuaravind")
-        password = urllib.parse.quote_plus("Guvi@123")
+        username = urllib.parse.quote_plus("enter your mongodb username")
+        password = urllib.parse.quote_plus("enter your mongodb password")
 
         client = MongoClient(f"mongodb+srv://{username}:{password}"
                              f"@vishnuaravind.se3bvtj.mongodb.net/?retryWrites=true&w=majority")
@@ -124,8 +124,8 @@ def mangodb_upload(collection_name, data):
 
 
 def mongodb_to_sql(collection_name):
-    username = urllib.parse.quote_plus("vishnuaravind")
-    password = urllib.parse.quote_plus("Guvi@123")
+    username = urllib.parse.quote_plus("enter your mongodb username")
+    password = urllib.parse.quote_plus("enter your mongodb password")
 
     client = MongoClient(f"mongodb+srv://{username}:{password}"
                          f"@vishnuaravind.se3bvtj.mongodb.net/?retryWrites=true&w=majority")
